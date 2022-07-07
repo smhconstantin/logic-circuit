@@ -1,4 +1,3 @@
-// program to convert decimal to binary
 function DecToBinary(decimal) {
     let binary = 0, reminder, i = 1;
     while (decimal != 0) {
@@ -7,6 +6,13 @@ function DecToBinary(decimal) {
         binary = binary + reminder * i;
         i = i * 10;
     }
-    return (binary);
+    
+    return binary;
+    /*
+      you can get your result like that
+      binary = Number(decimal.toString(2));
+      or
+      binary = +decimal.toString(2);
+    */
 }
-convertToBinary(125);
+DecToBinary(5);
