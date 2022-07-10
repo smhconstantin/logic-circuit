@@ -1,5 +1,5 @@
 function decoder(inp) {
-  let bit = parseInt(inp, 2);
+  const bit = parseInt(inp, 2);
   let out = [];
   out.length = 2 ** inp.length;
   out.fill(0);
